@@ -1,0 +1,105 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/22cd9c13-a1bb-4d66-a748-d8ac5699b52b/22cd9c13-a1bb-4d66-a748-d8ac5699b52b/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.logo {
+  width: 150px;
+}
+.sign-in {
+  background: #e50914;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 15%;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.email-form {
+  margin-top: 1rem;
+}
+.email-form input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 2px;
+}
+.email-form button {
+  padding: 10px 20px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Movie Sections */
+.category {
+  padding: 30px 20px;
+}
+.category h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.row img {
+  width: 200px;
+  height: 120px;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+.row img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9rem;
+}
